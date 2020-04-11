@@ -1,0 +1,179 @@
+<head>
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+</head>
+
+<style>
+    a[href^="mailto"]::before {
+        content: "📧 ";
+    }
+
+    a[href^="tel"]::before {
+        content: "📞 ";
+    }
+
+    a[href^="http"]::before {
+        content: "📧 ";
+        border: 1px solid burlywood;
+    }
+</style>
+
+<h1>address</h1>
+<address>
+    The <em>Author</em> can be contacted via
+    <br /><a href="mailto:rakeshvenkat.au.work@gmail.com">Email</a>
+    <br />or reaching out to the <strong>Author's</strong> <a href="http://rakeshvenkatwebblog.com">Blog</a>
+    <br />or calling him via <a href="tel:+61490009000">+61 4 9000 9000</a>
+    <hr />
+    <br /><b>Address::</b>
+    <br /> 5 davenPort Crescent
+    <br /> Cranbourne East
+    <br /> Victoria
+    <br /> 3977
+</address>
+
+<h1>article</h1>
+<style>
+    .forecast * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .forecast h1 {
+        color: rgb(14, 16, 168)
+    }
+
+    .forecast article {
+        padding: 5px;
+        border-bottom: 2px solid chocolate;
+        position: relative;
+    }
+
+    .forecast .day {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        width: 80%;
+        display: inline-block;
+    }
+
+    i {
+        display: inline-block;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+        margin-right: 30px;
+        color: rgb(80, 179, 221);
+    }
+
+    .min {
+        padding-top: 10px;
+        position: absolute;
+        top: 0;
+        margin-left: 20px;
+    }
+
+    .max {
+        position: absolute;
+        bottom: 0;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+</style>
+<article class="forecast">
+    <h1>Weather forecast for Melbourne</h1>
+    <article>
+        <div class="day">
+            <h3>Sunday</h3>
+            <h6>Mostly cloudy</h6>
+        </div>
+        <i class="fas fa-cloud"></i>
+        <span class="min">11</span><span class="max">15</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Monday</h3>
+            <h6>Partly cloudy</h6>
+        </div>
+        <i class="fas fa-cloud-sun"></i>
+        <span class="min">17</span><span class="max">12</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Tuesday</h3>
+            <h6>Partly cloudy</h6>
+        </div>
+        <i class="fas fa-cloud-sun"></i>
+        <span class="min">21</span><span class="max">16</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Wednesday</h3>
+            <h6>Mostly cloudy</h6>
+        </div>
+        <i class="fas fa-cloud"></i>
+        <span class="min">23</span><span class="max">18</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Thursday</h3>
+            <h6>Mostly cloudy</h6>
+        </div>
+        <i class="fas fa-cloud"></i>
+        <span class="min">20</span><span class="max">12</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Friday</h3>
+            <h6>Scattered showers</h6>
+        </div>
+        <i class="fas fa-cloud-rain"></i>
+        <span class="min">16</span><span class="max">11</span>
+    </article>
+    <article>
+        <div class="day">
+            <h3>Saturday</h3>
+            <h6>Sunny</h6>
+        </div>
+        <i class="fas fa-sun"></i>
+        <span class="min">21</span><span class="max">15</span>
+    </article>
+
+</article>
+<h2>Another example of article::::</h2>
+<article class="film_review">
+    <header>
+      <h2>Jurassic Park</h2>
+    </header>
+    <section class="main_review">
+      <p>Dinos were great!</p>
+    </section>
+    <section class="user_reviews">
+      <article class="user_review">
+        <p>Way too scary for me.</p>
+        <footer>
+          <p>
+            Posted on
+            <time datetime="2015-05-16 19:00">May 16</time>
+            by Lisa.
+          </p>
+        </footer>
+      </article>
+      <article class="user_review">
+        <p>I agree, dinos are my favorite.</p>
+        <footer>
+          <p>
+            Posted on
+            <time datetime="2015-05-17 19:00">May 17</time>
+            by Tom.
+          </p>
+        </footer>
+      </article>
+    </section>
+    <footer>
+      <p>
+        Posted on
+        <time datetime="2015-05-15 19:00">May 15</time>
+        by Staff.
+      </p>
+    </footer>
+  </article>
