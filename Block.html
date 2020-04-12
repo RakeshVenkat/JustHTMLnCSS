@@ -3,6 +3,16 @@
 </head>
 
 <style>
+    .element {
+        color: deepskyblue
+    }
+
+    .description {
+        color: rgb(62, 64, 175)
+    }
+</style>
+
+<style>
     a[href^="mailto"]::before {
         content: "📧 ";
     }
@@ -17,7 +27,7 @@
     }
 </style>
 
-<h1>address</h1>
+<h1 class="element">address</h1>
 <address>
     The <em>Author</em> can be contacted via
     <br /><a href="mailto:rakeshvenkat.au.work@gmail.com">Email</a>
@@ -31,7 +41,7 @@
     <br /> 3977
 </address>
 
-<h1>article</h1>
+<h1 class="element">article</h1>
 <style>
     .forecast * {
         margin: 0;
@@ -57,7 +67,7 @@
         display: inline-block;
     }
 
-    i {
+    i.fas {
         display: inline-block;
         font-size: 1.6rem;
         padding-bottom: 10px;
@@ -142,38 +152,793 @@
 <h2>Another example of article::::</h2>
 <article class="film_review">
     <header>
-      <h2>Jurassic Park</h2>
+        <h2>Jurassic Park</h2>
     </header>
     <section class="main_review">
-      <p>Dinos were great!</p>
+        <p>Dinos were great!</p>
     </section>
     <section class="user_reviews">
-      <article class="user_review">
-        <p>Way too scary for me.</p>
-        <footer>
-          <p>
-            Posted on
-            <time datetime="2015-05-16 19:00">May 16</time>
-            by Lisa.
-          </p>
-        </footer>
-      </article>
-      <article class="user_review">
-        <p>I agree, dinos are my favorite.</p>
-        <footer>
-          <p>
-            Posted on
-            <time datetime="2015-05-17 19:00">May 17</time>
-            by Tom.
-          </p>
-        </footer>
-      </article>
+        <article class="user_review">
+            <p>Way too scary for me.</p>
+            <footer>
+                <p>
+                    Posted on
+                    <time datetime="2015-05-16 19:00">May 16</time>
+                    by Lisa.
+                </p>
+            </footer>
+        </article>
+        <article class="user_review">
+            <p>I agree, dinos are my favorite.</p>
+            <footer>
+                <p>
+                    Posted on
+                    <time datetime="2015-05-17 19:00">May 17</time>
+                    by Tom.
+                </p>
+            </footer>
+        </article>
     </section>
     <footer>
-      <p>
-        Posted on
-        <time datetime="2015-05-15 19:00">May 15</time>
-        by Staff.
-      </p>
+        <p>
+            Posted on
+            <time datetime="2015-05-15 19:00">May 15</time>
+            by Staff.
+        </p>
     </footer>
-  </article>
+</article>
+
+<style>
+    .sensex p {
+        width: 75%;
+    }
+
+    .sensex aside {
+        width: 25%;
+        float: right;
+        box-shadow: inset 5px 0 5px -5px #29627e;
+        padding-left: 20px;
+    }
+
+    #total {
+        float: left;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+        min-height: 20px;
+        width: 148px;
+    }
+
+    #rise,
+    #rise i {
+        color: #008400;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #rise #percent {
+        font-size: 14px;
+        font-weight: 500;
+    }
+</style>
+
+<h1 class="element">aside</h1>
+<i>sidebar!!</i>
+<h4 class="description">content indirectly related to parent. Sidebars, callouts</h4>
+<div class="sensex">
+    <p>The Sensex, also known as the sensitivity index,
+        is the benchmark index of BSE Limited and is the
+        most widely tracked equity gauge in India.</p>
+    <aside>The Sensex rose today to <span id="total">31159.62</span>
+        <span id="rise"><i class="fas fa-arrow-up"></i><b>1265.66</b>
+            <span id="percent">(4.23%)</span></span>
+
+    </aside>
+    <p>Officially known as the S&P BSE Sensex since February, 2013, the index captures the performance of the top 30
+        largest, most liquid and financially stable companies from across major sectors of the Indian economy that are
+        listed on the exchange. It reflects the health of the equity market, investor sentiment and broadly the state of
+        the
+        economy.</p>
+</div>
+<i>callout!!</i>
+<article>
+    <p>
+        The Disney movie <cite>The Little Mermaid</cite> was
+        first released to theatres in 1989.
+    </p>
+    <aside>
+        <b>
+            The movie earned $87 million during its initial release.
+        </b>
+    </aside>
+    <p>
+        More info about the movie...
+    </p>
+</article>
+
+<h1 class="element">blockquote</h1>
+<h4 class="description">extended quotation from a source with cite attribute having source of info. cite element can be
+    used to text representation of source.</h4>
+<blockquote cite="https://www.politico.com/news/2020/04/10/trump-mexico-output-cuts-opec-179275">
+    <p>President Donald Trump said the United States would cut its oil production to assist Mexico in keeping alive a
+        deal between OPEC and other oil-producing countries to boost global oil prices.</p>
+    <footer>Source: BEN LEFEBVRE <cite>politico.com</cite></footer>
+</blockquote>
+
+
+
+<h1 class="element">details</h1>
+<h4 class="description">disclosure widget. disclosure placed under summary element. Content to be placed as a child.
+    Shown upon clicking the widget <i>open</i></h4>
+<style>
+    details>summary::-webkit-details-marker {
+        color: red;
+    }
+</style>
+<details>
+    <summary>MIT Licence</summary>
+    Copyright <YEAR>
+        <COPYRIGHT HOLDER>
+            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+            documentation files (the "Software"), to deal in the Software without restriction, including without
+            limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+            the Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+            conditions:
+
+            The above copyright notice and this permission notice shall be included in all copies or substantial
+            portions of the Software.
+
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+            LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+            EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+            AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+            OR OTHER DEALINGS IN THE SOFTWARE.
+</details>
+
+<details>
+    <p>Population of </p><i class="far fa-surprise"></i> <b>Australia</b> is <b>24.99 million (2018)</b>
+    <p></p>
+    <p><i class="far fa-grin-squint-tears"></i> <b>India</b> is <b>1353 million (2018)</b></p>
+</details>
+
+
+<h1 class="element">dialog</h1>
+<h4 class="description">Used for alerts, interceptor</h4>
+
+<dialog open>
+    Hello there!! What are you up to today?
+</dialog>
+<br /><br /><br />
+<dialog close>
+    Dialogs over lap on each other!!
+</dialog>
+
+<menu>
+    <button id="triggerBtn">Update favorite animal</button>
+</menu>
+<output id="myoutput"></output>
+<dialog id="favDialog">
+    <form method="dialog">
+        <menu>
+            <label>Select favorite animal:</label>
+            <select id="selectedAnimal">
+                <option></option>
+                <option value="1">Dinosaur</option>
+                <option value="2">Mammoth</option>
+                <option value="3">Saber tooth tiger</option>
+            </select>
+        </menu>
+        <menu>
+            <button id="cancel">Cancel</button>
+            <button id="change">Change</button>
+        </menu>
+    </form>
+</dialog>
+
+<script>
+    const dialogEl = document.getElementById('favDialog')
+    const myoutputEl = document.getElementById('myoutput')
+    const triggerEl = document.getElementById('triggerBtn')
+    const selectedAnimal = document.getElementById('selectedAnimal')
+    const changeBtn = document.getElementById('change')
+    const cancelBTn = document.getElementById('cancel')
+
+    triggerEl.addEventListener('click', function openDialog() {
+        if (typeof (dialogEl.showModal) === 'function') {
+            // EventTarget <- Node <- Element <- HTMLElement <- HTMLDialogElement
+            // HTMLDialogElement.showDialog() : showDialog() is the interface provided to manipulate dialog elements
+            dialogEl.showModal()
+        } else {
+            myoutputEl.innerHTML = 'Dialog open functionality is disabled!!'
+        }
+    })
+
+    /*
+    selectedAnimal.addEventListener('change', () => {
+        var some = selectedAnimal.options[selectedAnimal.selectedIndex].text
+        myoutputEl.innerHTML = `Favorite animal was set to ${some} at ${Date().toString()}`
+    })
+    const changeBtn = document.getElementById('change')
+    document.getElementById('cancel').addEventListener('close', () => {
+        dialogEl.showModal()
+    })
+    */
+    // 1. Set the value on the submit button
+    selectedAnimal.addEventListener('change', () => {
+        changeBtn.value = selectedAnimal.options[selectedAnimal.selectedIndex].text
+    })
+
+    // 2. Use the dialogEl.returnValue to read the selected value as it was set on the button
+    // Gotcha !! the dialog will be closed when any of the two buttons are clicked !!
+    dialogEl.addEventListener('close', () => {
+        myoutputEl.value = `fav animal set to ${dialogEl.returnValue} at ${Date().toString()}`
+    })
+</script>
+
+<h1 class="element">dd, dl, dt</h1>
+<h4 class="description">Description detailm used witin description list within a description term</h4>
+<style>
+    dl p {
+        font-weight: bolder;
+        font-size: 20px;
+        color: goldenrod;
+    }
+
+    dt {
+        font-weight: bold;
+        ;
+    }
+
+    dd {
+        font-weight: 500;
+    }
+</style>
+
+<dl>
+    <p>Lord of ring characters</p>
+    <dt>Gandalf</dt>
+    <dd>Gandalf the Grey is a wizard</dd>
+
+    <dt>Bilbo</dt>
+    <dd>Bilbo Baggins is a strange and wonderful hobbit.</dd>
+
+    <dt>Frodo</dt>
+    <dd>Frodo is the Ring-Bearer. </dd>
+</dl>
+
+
+<h1 class="element">div</h1>
+<h4 class="description">generic container for flow content</h4>
+<style>
+    #battery img {
+        display: block;
+        margin-left: 25%;
+        width: 50%;
+        border: 2px solid red;
+    }
+
+    #battery {
+        box-shadow: 2px 2px 10px 10px #FFAA99;
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+    }
+</style>
+<div id="battery">
+    <img src="images/battery.jfif" /><br />
+    Batteries are made up of three basic components: an <b>anode, a cathode, and an electrolyte</b>. A separator is
+    often used
+    to prevent the anode and cathode from touching, if the electrolyte is not sufficient.</div>
+
+
+<h1 class="element">fieldset</h1>
+<h4 class="description">collection of form elements with labels. can be disabled together.</h4>
+
+<form>
+    <fieldset>
+        <legend>Select your favorite Ninja Turtles</legend> <br />
+        <label><input type="checkbox" checked>Raphael</label> <br />
+        <label><input type="checkbox">Michaelangelo</label> <br />
+        <label><input type="checkbox">Leonardo</label> <br />
+        <label><input type="checkbox">Donatello</label> <br />
+    </fieldset>
+</form>
+
+<form>
+    <fieldset disabled>
+        <legend>Steven Spielbergs movies that I like</legend>
+        <label><input type="radio">E.T The Extra terrestrial</label> <br />
+        <label><input type="radio">Jaws</label> <br />
+        <label><input type="radio">Schindler's List</label> <br />
+        <label><input type="radio">Jurassic Park</label> <br />
+        <label><input type="radio">Catch me if you can</label> <br />
+        <br />
+        <textarea>Disabled form elements dodnot get submitted or any events handled</textarea>
+    </fieldset>
+</form>
+
+
+<h1 class="element">figure, figcaption</h1>
+<h4 class="description">A figure wraps an img tag with a figcaption (text describing image)</h4>
+
+<style>
+    .figure {
+        display: flex;
+        align-items: center;
+        background-color: rgb(43, 32, 14);
+        padding: 15px;
+        margin: 10px;
+        border: 2px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .figure img {
+        max-width: 300px;
+        max-height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .figure>figcaption {
+        padding-left: 25px;
+        font-size: larger;
+        color: rgb(185, 129, 25);
+        text-align: center;
+
+    }
+</style>
+<figure class='figure'>
+    <img src="images/sunrise.jfif">
+    <figcaption>What time does the sun rise ?</figcaption>
+</figure>
+
+
+<h1 class="element">footer</h1>
+<h4 class="description">represemnts footer for its nearest sectioning or root content. generally has infor about author,
+    copyrights, links</h4>
+
+<style>
+    .mainfooter {
+        background-color: purple;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+<footer class="mainfooter">@ Copyrights protected 2020</footer>
+<br />
+<article>
+    Mr. and Mrs. Warren of 2107 S.E. Gabler Street were in search of a new car. In early 1934, the Topeka, Kansas couple
+    went to the Mosby-Mack Motor Company to see the latest automobiles on offer. It didn’t take long for the brand
+    spanking new Ford Fordor Deluxe to catch their eye. Painted a sleek Cordoba Gray and equipped with comfortable seats
+    and handsome bumper guards, Ruth Warren liked how it looked. Outfitted with the most enviable engine on the
+    market—the lean, mean, mass-produced V8 driving machine—her husband, Jesse Warren, liked how it moved.
+    <footer>
+        <p>By Eleanor Cummins || <span>May 23, 2018</span></p>
+    </footer>
+</article>
+
+<h1 class="element">form</h1>
+<h4 class="description">contains interactive controls to submit content</h4>
+<style>
+    .field label {
+        width: 30%;
+    }
+
+    .field input,
+    select {
+        width: 50%;
+    }
+
+    .field {
+        display: flex;
+        padding-bottom: 5px;
+    }
+
+    .field .options>input {
+        width: auto;
+    }
+</style>
+<form id="inputform">
+    <fieldset>
+        <div class="field">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <div class="field">
+            <label>Email address:</label>
+            <input type="text" name="email" autocomplete="off"></label><br />
+        </div>
+        <div class="field">
+            <label>Password:</label>
+            <input type="password" name="Password"></label><br />
+        </div>
+        <div class="field">
+            <label>Role:</label>
+            <select>
+                <option>developer</option>
+                <option>manager</option>
+                <option>executive</option>
+                <option>analyst</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>Plan:</label>
+            <div class="options">
+                <input type="radio">Monthly
+                <input type="radio">Quarterly
+                <input type="radio">Yearly
+            </div>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </fieldset>
+</form>
+
+
+<h1 class="element">h1, h2, h3, h4, h5, h6</h1>
+<h4 class="description">headings</h4>
+
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+
+<header>
+    <nav aria-labelledby="primary-navigation">
+        <h2 id="primary-navigation">Primary navigation</h2>
+        <!-- navigation items -->
+    </nav>
+</header>
+
+<!-- page content -->
+
+<footer>
+    <nav aria-labelledby="footer-navigation">
+        <h2 id="footer-navigation">Footer navigation</h2>
+        <!-- navigation items -->
+    </nav>
+</footer>
+
+
+<h1 class="element">header</h1>
+<h4 class="description">introductory content, group of navigation elements</h4>
+
+<style>
+    #companyHeader {
+        background-color: white;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #d0cfd0;
+        font-family: sans-serif;
+    }
+
+    #companyHeader span {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #companyHeader .left {
+        padding: 20px;
+    }
+
+    #companyHeader .left img {
+        height: 60px;
+    }
+
+    #companyHeader span a {
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 700;
+        color: #25446e;
+    }
+
+    #companyHeader span a:hover {
+        border-bottom: 3px solid #a7202d;
+    }
+</style>
+<header id="companyHeader">
+    <div class="left">
+        <img src="images/ea-games-logo.jfif">
+    </div>
+    <div class="right">
+        <span><a href="/home">Home</a></span>
+        <span><a href="/contacts">Contacts</a></span>
+        <span><a href="/faqs">Faqs</a></span>
+        <span><a href="/login">Login</a></span>
+    </div>
+
+</header>
+
+<h1 class="element">hgroup</h1>
+<h4 class="description">groups heading</h4>
+
+<hgroup>
+    <h1>Calculus I</h1>
+    <h2>Fundamentals</h2>
+</hgroup>
+<p>This course will start with a brief introduction about the limit of a function. Then we will describe how the idea of
+    derivative emerges in the Physics and Geometry fields. After that, we will explain that the key to master calculus
+    is …</p>
+
+<h1 class="element">hr</h1>
+<h4 class="description">Horizontal rule</h4>
+
+<p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+<hr>
+<p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+<hr>
+
+<h1 class="element">li</h1>
+<h4 class="description">list item. Derived from HTMLLIElement -> extra methods and props to manipulate lists.
+    Permitted parents are <b>ul</b> <b>ol</b> <b>menu</b> and also not advisable <b>div</b>
+</h4>
+
+<style>
+    menu {
+        list-style: none;
+    }
+
+    .headerItem {
+        background-color: salmon;
+        width: 100px;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        margin: 2px;
+    }
+</style>
+<menu>
+    <li>
+        <div class="headerItem">Fragrances</div>
+    </li>
+    <li>
+        <div class="headerItem">Vitamnins</div>
+    </li>
+    <li>
+        <div class="headerItem">Beauty</div>
+    </li>
+    <li>
+        <div class="headerItem">Skin care</div>
+    </li>
+    <li>
+        <div class="headerItem">Cosmetics</div>
+    </li>
+    <li>
+        <div class="headerItem">Baby care</div>
+    </li>
+</menu>
+<hr />
+<style>
+    #ar1,
+    #ar2,
+    #ar3 {
+        padding-top: 20vh;
+    }
+</style>
+<ol>
+    <li><a href="#ar1">Get flu shots</a></li>
+    <li><a href="#ar2">Click and Collect</a></li>
+    <li><a href="#ar3">Schedule doctor appointment</a></li>
+</ol>
+
+<article id="ar1">Flu shots</article>
+<article id="ar2">Click and collect</article>
+<article id="ar3">Doctor consultation</article>
+<hr />
+<style>
+    ul {
+        list-style: none;
+    }
+
+    .sections {
+        background: #CBE432;
+        color: #B81484;
+        margin-bottom: 2px;
+    }
+
+    .sections>h3 {
+        margin: .25em 0;
+        padding: .25em 5px;
+        margin-bottom: 0;
+    }
+
+    .sections>h6 {
+        margin: 0;
+        padding: 0 10px 10px;
+    }
+</style>
+<ul>
+    <li class="sections">
+        <h3>Find Stores by State</h3>
+        <h6>Search by suburb, postcode, or state to find local stores.</h6>
+    </li>
+    <li class="sections">
+        <h3>Current Store Location</h3>
+        <h6>Find the nearest stores to your current location.</h6>
+    </li>
+    <li class="sections">
+        <h3>Contact via Phone</h3>
+        <h6>To contact your nearest Chemist Warehouse store, Calls: 1300 734 876</h6>
+    </li>
+</ul>
+<hr />
+
+<h1 class="element">main</h1>
+<h4 class="description">Main section of the document</h4>
+<main>
+    This is the main section of the document.
+</main>
+
+<main>
+    <h1>Apples</h1>
+    <p>The apple is the pomaceous fruit of the apple tree.</p>
+
+    <article>
+        <h2>Red Delicious</h2>
+        <p>These bright red apples are the most common found in many
+            supermarkets.</p>
+        <p>... </p>
+        <p>... </p>
+    </article>
+
+    <article>
+        <h2>Granny Smith</h2>
+        <p>These juicy, green apples make a great filling for
+            apple pies.</p>
+        <p>... </p>
+        <p>... </p>
+    </article>
+</main>
+<hr />
+
+
+<h1 class="element">nav</h1>
+<h4 class="description">section of a page whose purpose is to provide navigation links, either within the current
+    document or to other documents</h4>
+<style>
+    .crumbs ol {
+        list-style-type: none;
+    }
+
+    .crumbs li {
+        display: inline;
+    }
+
+    .crumbs li a {
+        text-decoration: none;
+    }
+
+    .crumbs li a:after {
+        content: '>';
+    }
+</style>
+<nav class="crumbs">
+    <ol>
+        <li class="crumb"><a href="bikes">Bikes</a></li>
+        <li class="crumb"><a href="bikes/bmx">BMX</a></li>
+        <li class="crumb">Jump Bike 3000</li>
+    </ol>
+</nav>
+<h1>Jump Bike 3000</h1>
+<p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.
+</p>
+
+<hr />
+
+<h1 class="element">ol</h1>
+<h4 class="description"> an ordered list of items — typically rendered as a numbered list.</h4>
+<ol>
+    <li>Mix flour, baking powder, sugar, and salt.</li>
+    <li>In another bowl, mix eggs, milk, and oil.</li>
+    <li>Stir both mixtures together.</li>
+    <li>Fill muffin tray 3/4 full.</li>
+    <li>Bake for 20 minutes.</li>
+</ol>
+<hr />
+
+<h1 class="element">p</h1>
+<h4 class="description">Paragraph</h4>
+<p>Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines
+    and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images
+    or form fields.</p>
+<hr />
+
+<h1 class="element">pre</h1>
+<h4 class="description">Pre formatted text. represented as written in HTML. monospaced</h4>
+<style>
+    pre {
+        font-size: .7rem;
+        margin: 0;
+    }
+</style>
+<pre>
+    L          TE
+      A       A
+        C    V
+         R A
+         DOU
+         LOU
+        REUSE
+        QUE TU
+        PORTES
+      ET QUI T'
+      ORNE O CI
+       VILISÉ
+      OTE-  TU VEUX
+       LA    BIEN
+      SI      RESPI
+              RER       - Apollinaire
+  </pre>
+
+<p>Using CSS to change the font color is easy.</p>
+<pre>
+body {
+  color: red;
+}
+</pre>
+<hr />
+
+<h1 class="element">section</h1>
+<h4 class="description"> a standalone section.sections have a heading.</h4>
+<h1>How to Fish</h1>
+<section>
+    <h2>Introduction</h2>
+    <p>People have been catching fish for food since before recorded history…</p>
+</section>
+
+<section>
+    <h2>Equipment</h2>
+    <p>The first thing you’ll need is a fishing rod or pole that you find comfortable and is strong enough for the kind
+        of fish you’re expecting to land…</p>
+</section>
+<hr />
+
+<h1 class="element">table</h1>
+<h4 class="description">Tabular representation in 2 d format</h4>
+
+<style>
+    table,
+    td {
+        border: 1px solid #333;
+    }
+
+    thead,
+    tfoot {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+</table>
+<hr/>
+
+<h1 class="element">ul</h1>
+<h4 class="description">Un ordered list </h4>
+<ul>
+    <li>Milk</li>
+    <li>Cheese
+        <ul>
+            <li>Blue cheese</li>
+            <li>Feta</li>
+        </ul>
+    </li>
+</ul>
+<h/>
