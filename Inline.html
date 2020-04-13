@@ -1,0 +1,266 @@
+<link rel="stylesheet" type="text/css" href="styles/resetstyles.css" />
+<main>
+    <style>
+        h1 {
+            color: rgb(51, 255, 0);
+            font-size: large;
+            font-weight: 800;
+            margin: 0.5em 0;
+        }
+
+        h4 {
+            color: rgb(255, 0, 98);
+            font-size: medium;
+            font-weight: 800;
+            margin: 0.5em 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    </style>
+    <h1>Playground of inline elements with examples </h1>
+    <style>
+        .showcase span {
+            box-shadow: 2px 2px 2px red;
+        }
+
+        .showcase p {
+            box-shadow: 3px 3px 3px green;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline {
+            display: inline;
+        }
+    </style>
+    <article id="maincontent" class="showcase">
+        <h1>Inline vs Block</h1>
+        <h4>Block element breaks the area, while inline doesn't.
+            Inline uses an <b>Inline box</b>, while
+            Block uses an <b>Block box</b>. These can be intercahnged thou'
+        </h4>
+
+        <div><span>Hand</span> <span>Therapy</span> <span>Balls</span></div>
+        <div>
+            <p>Hand</p>
+            <p>Therapy</p>
+            <p>Balls</p>
+        </div>
+
+        Interchange using the display CSS property !!
+        <div><span class="block">5</span> <span class="block">Wood</span> <span class="block">Puzzles</span></div>
+        <div>
+            <p class="inline">Peppa</p>
+            <p class="inline">Pig</p>
+        </div>
+    </article>
+    <style>
+
+    </style>
+    <article class="inlinecontentmodel">
+        <h1>Inline content model Rule</h1>
+        <h4>You cant nest a block element inside an inline elment
+            and expect it to behave like an inline fashion !!
+            You can nest an inline within thou'
+        </h4>
+        <span>
+            <div>Pack</div>
+        </span> <span>of</span> <span>Five</span>
+    </article>
+    <style>
+        .reachAuthor a[href^="http"]::before {
+            content: "🔗 "
+        }
+
+        .reachAuthor a[href^="mailto"]::before {
+            content: "📧 "
+        }
+
+        .reachAuthor a[href^="tel"]::before {
+            content: "📞 "
+        }
+
+        .reachAuthor li {
+            margin-bottom: 0.5em;
+            padding-left: 1em;
+        }
+
+        .reachAuthor ul {
+            padding: 1em;
+        }
+    </style>
+    <article class="reachAuthor">
+        <h1>anchor or the a tag</h1>
+        <h4>hyperlink to email addresses, web page, section within same page, file, etc..</h4>
+        Author can be reached out at:
+        <ul>
+            <li><a href="http://authorblogpost.com">Author's Blog post</a></li>
+            <li><a href="mailto:author@podcasts.com">Author's Inbox</a></li>
+            <li><a href="tel:+614876788768">Author's office number</a></li>
+        </ul>
+        <p><a href="#maincontent">Click to go the top!!</a></p>
+
+        <p><a href="http://youtube.com">Youtube</a></p>
+
+        if href is empty, it takes you to same page
+        <li><a href="">Click to go to same page!!</a></li>
+        Download !! Not working.
+        <li><a href="" download="images/airtel.png">Airtel logo</a></li>
+        Using a '/' in the begining of the path in href makes the path as filesystemroot/path
+        Without a leading '/' the path uses the application root where the current file is loacated and concatenates the
+        path. See below for the example.
+
+        <li><a href="images/airtel.png">Go to the file now!!</a></li>
+        <li><a href="//somerelativeurl">Some relative url</a></li>
+        <li><a href="/images/airtel.png">Images Directory relative file</a></li>
+        <li><a href="/en-US/docs/Web/HTML">Some origin relative URL</a></li>
+        Button vs anchor for onclick event.
+        <p><a href="#">Click to go nowhere</a></p>
+        <p><button>Click to go nowhere</button></p>
+        Using href='#' or jsavascript:void(0) causes unreliable actions sometimes
+        <p><a href="files/sample.txt">Go to the sample file</a></p>
+
+        <p>
+            <a href="https://7news.com.au/sunrise" target="_blank">
+                <img src="images/sunrise.jfif" alt="Click to navigate to 7 news" />
+            </a>
+        </p>
+    </article>
+    <style>
+        .useAbbr p {
+            color: blueviolet;
+            margin: 10px;
+        }
+
+        .useAbbr abbr::after {
+            content: '=>'
+        }
+    </style>
+    <article class="useAbbr">
+        <h1>abbr</h1>
+        <h4>abbreviations</h4>
+        <p><abbr title="Web Content Accessibility Guidelines">WCAG</abbr></p>
+        <p><abbr>LaA</abbr></p>
+        <p><abbr title="LosAngeles Avengers">LaA</abbr></p>
+        <p><dfn id="html"><abbr title="Hyper Text markup Languuage">HTML</abbr></dfn></p>
+        <p><dfn id="spec">Specification</dfn><abbr title="Exctensible Markup Language">XML</abbr>is different thou'</p>
+        <p><dfn id="Definition dictionary">Definition dictionary
+                <p><abbr title="Accessible Rich Internet Applications">ARIA</abbr>Web standards published by the World
+                    Wide Web Consortium (W3C)</p>
+                <p><abbr title="Atomic Cascading Style Sheets">ACSS</abbr>writing methodology developed by Yahoo.</p>
+                <p><abbr title="Accelerated Mobile Pages">AMP</abbr>a mobile web standard initiated by Google with the
+                    purpose of making mobile sites faster.</p>
+                <p><abbr title="Application Programming Interface:">API</abbr> set of pre-written code features</p>
+                <p><abbr title="Block, Element, Modifier">BEM</abbr>a naming convention for writing readable,
+                    consistent, and maintainable CSS classes. follows the block__element--modifier syntax.</p>
+                <p><abbr title="Content Delivery Network">CDN</abbr>a network of distributed servers that store
+                    duplicate copies of our web content</p>
+                <p><abbr title="Content Management System">CMS</abbr>a software that allows us to publish, modify, and
+                    organize different kind of digital content</p>
+                <p><abbr title="Create, Read, Update, Delete">CRUD</abbr>a term used in database management, it contains
+                    the four basic functions of a persistent database.</p>
+                <p><abbr title="Cascading Style Sheets Object Model">CSSOM</abbr>a set of APIs used by browsers to
+                    properly render CSS styles on a web page.</p>
+                <p><abbr title="Call-To-Action">CTA</abbr>a marketing term frequently used in web design.</p>
+                <p><abbr title="Document Object Model">DOM</abbr>an API for HTML and XML documents, used by browsers to
+                    render these documents.</p>
+                <p><abbr title="European Computer Manufacturers Association Script">ECMAScript (ES)</abbr>a scripting
+                    language specification on which the syntax of JavaScript – along with JScript and ActionScript – is
+                    based.</p>
+                <p><abbr title="Free and Open-Source Software">FOSS</abbr>a software that is free in the sense that it
+                    doesn’t have any constraints on copyrights, and open-source in the sense that anyone can access and
+                    modify the source code</p>
+                <p><abbr title="First Time Use">FTU</abbr>the first time a user loads a software after installation.</p>
+                <p><abbr title="Graphical User Interface">GUI</abbr>a type of user interface, as opposed to
+                    command-driven interfaces.</p>
+                <p><abbr title="Integrated Development Environment">IDE</abbr>Aa software application that provides us
+                    with a programming environment that integrates different tools needed for development & testing,
+                    such as a source code editor, build automation tools, a compiler or interpreter, and a debugger.
+                    Xcode, Eclipse, and Visual Studio are examples of IDEs.</p>
+                <p><abbr title="Immediately Invoked Function Expression">IIFE</abbr>a popular JavaScript design pattern
+                    that creates a lexical scope.</p>
+                <p><abbr title="Inverted Triangle Cascading Style Sheets">ITCSS</abbr>a scalable CSS architecture for
+                    reusable CSS code. splits CSS properties into levels based on their specifity and importance.</p>
+                <p><abbr title="JavaScript Object Notation">JSON</abbr>a language-independent, human-readable data
+                    format for interchanging data.</p>
+                <p><abbr title="Linux, Apache, MySQL, PHP/Python/Perl">LAMP</abbr>a popular web stack for creating
+                    dynamic websites.</p>
+                <p><abbr title="Left To Right / Right To Left">LTR/RTL</abbr>terms used in internationalization</p>
+                <p><abbr title="MongoDB, Express.js, Angular, Node.js">MEAN</abbr>a JavaScript-only web stack for
+                    creating dynamic websites and web applications</p>
+                <p><abbr title="Model-View-Controller">MVC</abbr>An architectural pattern used in object-oriented
+                    programming.</p>
+                <p><abbr title="Open Authentication">OAuth</abbr>An open protocol that makes secure authorization
+                    possible in a safe and standardized way.</p>
+                <p><abbr title="Object-Oriented Programming">OOP</abbr>A programming paradigm as opposed to procedural
+                    programming. four major principles: abstraction, encapsulation, inheritance & polymorphism</p>
+                <p><abbr title="Regular Expression">REGEX</abbr>A text pattern used for matching character combinations
+                    in different strings.</p>
+                <p><abbr title="Representational State Transfer">REST</abbr>A set of software design architectural
+                    guidelines for data transmission between client and server.</p>
+                <p><abbr title="Source Control Management">SCM</abbr>a system for managing multiple versions of the same
+                    document, application, code, or other kind of information. Also called version or revision control
+                    management.</p>
+                <p><abbr title="Scalable and Modular Architecture for Cascading Style Sheets">SMACSS</abbr>A CSS writing
+                    methodology that allows us to modularize CSS code, and make it more readable and maintainable.</p>
+                <p><abbr title="What You See Is What You Get">WYSIWYG</abbr>A type of content editor that allows users
+                    to edit text, images, and other content types without writing any markup.</p>
+            </dfn></p>
+    </article>
+    <hr />
+    <style>
+
+    </style>
+    <article class="testAudio">
+        <h1>audio</h1>
+        <h4>element is used to embed sound content in documents. It may contain one or more audio sources, represented
+            using the src attribute or the <source> element. The <b>source</b> attribute is mandatory to show the file.</h4>
+        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3">Your browser doent support playing audio files</audio>
+        Auto Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" autoplay>Here is a <a
+                href="media/file_example_MP3_700KB.mp3">link to the audio</a> instead.</p></audio>
+        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" currentTime='3600'>Your browser doent support playing
+            audio files</audio>
+        Play MP3 here: <audio controls>
+            <source src="media/file_example_MP3_700KB.mp3" type="audio/mp3">
+            <source src="media/file_example_OOG_1MG.ogg" type="audio/ogg">
+            <source src="media/file_example_WAV_1MG.wav" type="audio/wav">
+        </audio>
+    </article>
+    <style>
+
+    </style>
+    <article class="">
+        <h1></h1>
+        <h4></h4>
+    </article>
+    <style>
+
+    </style>
+    <article class="">
+        <h1></h1>
+        <h4></h4>
+    </article>
+    <style>
+
+    </style>
+    <article class="">
+        <h1></h1>
+        <h4></h4>
+    </article>
+    <style>
+
+    </style>
+    <article class="">
+        <h1></h1>
+        <h4></h4>
+    </article>
+
+
+
+
+</main>
