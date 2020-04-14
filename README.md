@@ -35,4 +35,14 @@ Set of practice exercises that I used for learning HTML and CSS
 <em>
 <embed>`
 
+# Day3:
+Examples of inline elements for letters starting i added
+`
+<i>
+<iframe>
+<img>
+<input>
+<ins>
+`
+Split the file into two as loading in one file was getting cumbersome !!
 

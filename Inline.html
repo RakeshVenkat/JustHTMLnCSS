@@ -7,33 +7,33 @@
             font-weight: 800;
             margin: 0.5em 0;
         }
-
+    
         h4 {
             color: rgb(255, 0, 98);
             font-size: medium;
             font-weight: 800;
             margin: 0.5em 0;
         }
-
+    
         a {
             text-decoration: none;
             color: unset;
         }
     </style>
-    <h1>Playground of inline elements with examples </h1>
+    <h1>Playground of inline elements with examples - Page 1</h1>
     <style>
         .showcase span {
             box-shadow: 2px 2px 2px red;
         }
-
+    
         .showcase p {
             box-shadow: 3px 3px 3px green;
         }
-
+    
         .block {
             display: block;
         }
-
+    
         .inline {
             display: inline;
         }
@@ -44,14 +44,14 @@
             Inline uses an <b>Inline box</b>, while
             Block uses an <b>Block box</b>. These can be intercahnged thou'
         </h4>
-
+    
         <div><span>Hand</span> <span>Therapy</span> <span>Balls</span></div>
         <div>
             <p>Hand</p>
             <p>Therapy</p>
             <p>Balls</p>
         </div>
-
+    
         Interchange using the display CSS property !!
         <div><span class="block">5</span> <span class="block">Wood</span> <span class="block">Puzzles</span></div>
         <div>
@@ -60,7 +60,7 @@
         </div>
     </article>
     <style>
-
+    
     </style>
     <article class="inlinecontentmodel">
         <h1>Inline content model Rule</h1>
@@ -76,20 +76,20 @@
         .reachAuthor a[href^="http"]::before {
             content: "🔗 "
         }
-
+    
         .reachAuthor a[href^="mailto"]::before {
             content: "📧 "
         }
-
+    
         .reachAuthor a[href^="tel"]::before {
             content: "📞 "
         }
-
+    
         .reachAuthor li {
             margin-bottom: 0.5em;
             padding-left: 1em;
         }
-
+    
         .reachAuthor ul {
             padding: 1em;
         }
@@ -104,9 +104,9 @@
             <li><a href="tel:+614876788768">Author's office number</a></li>
         </ul>
         <p><a href="#maincontent">Click to go the top!!</a></p>
-
+    
         <p><a href="http://youtube.com">Youtube</a></p>
-
+    
         if href is empty, it takes you to same page
         <li><a href="">Click to go to same page!!</a></li>
         Download !! Not working.
@@ -114,7 +114,7 @@
         Using a '/' in the begining of the path in href makes the path as filesystemroot/path
         Without a leading '/' the path uses the application root where the current file is loacated and concatenates the
         path. See below for the example.
-
+    
         <li><a href="images/airtel.png">Go to the file now!!</a></li>
         <li><a href="//somerelativeurl">Some relative url</a></li>
         <li><a href="/images/airtel.png">Images Directory relative file</a></li>
@@ -124,7 +124,7 @@
         <p><button>Click to go nowhere</button></p>
         Using href='#' or jsavascript:void(0) causes unreliable actions sometimes
         <p><a href="files/sample.txt">Go to the sample file</a></p>
-
+    
         <p>
             <a href="https://7news.com.au/sunrise" target="_blank">
                 <img src="images/sunrise.jfif" alt="Click to navigate to 7 news" />
@@ -136,7 +136,7 @@
             color: blueviolet;
             margin: 10px;
         }
-
+    
         .useAbbr abbr::after {
             content: '=>'
         }
@@ -214,7 +214,7 @@
     </article>
     <hr />
     <style>
-
+    
     </style>
     <article class="testAudio">
         <h1>audio</h1>
@@ -235,7 +235,7 @@
         </audio>
     </article>
     <style>
-
+    
     </style>
     <article class="">
         <h1>Bring Attention To element </h1>
@@ -254,7 +254,7 @@
         <h1>bdi: bidirectional isolate</h1>
         <h4>browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text</h4>
         <h1>World wrestling championships</h1>
-
+    
         <ul>
             <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
             <li><bdi class="name">François fatale</bdi>: 2nd place</li>
@@ -264,7 +264,7 @@
         </ul>
     </article>
     <style>
-
+    
     </style>
     <article class=""">
         <h1>" bdo HTML Bidirectional Text Override element</h1>
@@ -298,7 +298,7 @@
             padding: 10px;
             border-radius: 10px;
         }
-
+    
         .testButtons #two {
             border: none;
             background-color: rgb(0, 174, 255);
@@ -332,7 +332,7 @@
         </form>
     </article>
     <hr />
-
+    
     <style>
     </style>
     <article class="canvaspg">
@@ -368,8 +368,8 @@
         <p>The <code>getContext()</code> API is used to create a context for a Canvas element</p>
     </article>
     <hr />
-
-
+    
+    
     <article>
         <h1>data</h1>
         <h4>element with additional item information. if its related to time or date, use time elemnet instead</h4>
@@ -406,7 +406,7 @@
             color: red;
             background-color: honeydew;
         }
-
+    
         ins {
             color: rgb(47, 255, 109);
             background-color: honeydew;
@@ -449,31 +449,77 @@
     <article class="">
         <h1>embed</h1>
         <h4>Embedding a video is possible with this tag. Give it suitable width, height and src</h4>
-        <embed width="500" height="500" src="https://embed.ted.com/talks/karin_oberg_the_galactic_recipe_for_a_living_planet">
+        <embed width="500" height="500"
+            src="https://embed.ted.com/talks/karin_oberg_the_galactic_recipe_for_a_living_planet">
     </article>
     <hr />
     <style>
+    
     </style>
     <article class="">
-        <h1></h1>
-        <h4></h4>
+        <h1>i</h1>
+        <h4>Indent: use this for showing an importance in a line.<br />
+            Use <<b>em</b>> to indicate stress emphasis.<br />
+                Use <<b>strong</b>> to indicate stronger importance.<br />
+                    Use <<b>mark</b>> to indicate relevance.<br />
+                        Use <<b>cite</b>> to mark the name of a work, such as a book, play, or song.<br />
+                            Use <<b>dfn</b>> to mark the defining instance of a term<br />
+        </h4>
+        <p>lambs are reared for their wool.<i>"We have been rearing them since last 10 years"</i> - Albert Mack (Farmer)
+        </p>
     </article>
     <hr />
     <style>
+        iframe {
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
     </style>
-    <article class="">
-        <h1></h1>
-        <h4></h4>
+    <article class="testiFrame">
+        <h1>iFrame</h1>
+        <h4>a nested browsing context</h4>
+        <p><b>Merinda Park station</b></p>
+        <iframe id="merindaPark" title="merindaparkGoogleMap" width="100%" height="100%" name="merindaParkIframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12562.554795102018!2d145.2555523417724!3d-38.07879456387455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad611d69478cf15%3A0x1d04567609f515d0!2sMerinda%20Park%20Station!5e0!3m2!1sen!2sau!4v1586828594633!5m2!1sen!2sau"
+            frameborder="0" allow="fullscreen" aria-hidden="false" tabindex="0" referrerpolicy="origin"></iframe>
+        <p>The article : parent browsing context</p>
+        <p>The iframe holds its own browsing context and history</p>
+        Using the name attribute of iFrame, the iFrame can be loaded in the target attr of a, form, button, input etc..
+        <div><a href="#" target="merindaParkIframe">Open the iframe using the iFrame name in the target attr of a</a>
+        </div>
+        <br />
+        <form target="merindaParkIframe"><input type="text"><button type="submit">Load the iFrame</button></form>
+    
+        referrer header. Folloring is the request sent by default:
+        <pre>
+        Request URL: https://pb.tedcdn.com/bumpers/hls/video/in/Thousands-950k.ts?bytes=0-1222375
+        Request Method: GET
+        Status Code: 206 
+        Remote Address: 151.101.82.109:443
+        Referrer Policy: no-referrer-when-downgrade
+        </pre>
+        <br /><a href="https://www.w3schools.com/tags/att_iframe_sandbox.asp">W3Schools snadbox</a>
+        Empty iframe box: <iframe src="about:blank"></iframe>
+        <br />The <em>title</em> attribute needs to <strong>describe</strong> what the iFrame is doing. This is needed
+        by screen readers!!
     </article>
     <hr />
     <style>
+        .images img {
+            border: 3px solid red;
+            width: 500px;
+        }
+    
+        .images img:hover {
+            border: 5px solid green;
+            border-radius: 5px;
+        }
     </style>
-    <article class="">
-        <h1></h1>
+    <article class="images">
+        <h1>img</h1>
         <h4></h4>
+        JPG: <img src="images/x1d-xcd45-02.jpg" width="150" height="200" alt="reflection of hill over clear water"
+            decoding="auto" loading="lazy">
+        PNG: <img width="200" height="200" src="images/airtel.png">
     </article>
-    <hr />
-
-
-
 </main>
