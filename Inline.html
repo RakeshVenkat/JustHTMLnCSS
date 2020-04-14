@@ -219,11 +219,14 @@
     <article class="testAudio">
         <h1>audio</h1>
         <h4>element is used to embed sound content in documents. It may contain one or more audio sources, represented
-            using the src attribute or the <source> element. The <b>source</b> attribute is mandatory to show the file.</h4>
-        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3">Your browser doent support playing audio files</audio>
+            using the src attribute or the
+            <source> element. The <b>source</b> attribute is mandatory to show the file.</h4>
+        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3">Your browser doent support playing audio
+            files</audio>
         Auto Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" autoplay>Here is a <a
                 href="media/file_example_MP3_700KB.mp3">link to the audio</a> instead.</p></audio>
-        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" currentTime='3600'>Your browser doent support playing
+        Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" currentTime='3600'>Your browser doent
+            support playing
             audio files</audio>
         Play MP3 here: <audio controls>
             <source src="media/file_example_MP3_700KB.mp3" type="audio/mp3">
@@ -235,31 +238,241 @@
 
     </style>
     <article class="">
-        <h1></h1>
-        <h4></h4>
+        <h1>Bring Attention To element </h1>
+        <h4>reader's attention to the element's contents, was called boldface before</h4>
+        When <b>strong, em, mark</b> cannot be used, use the b tag. Its used when there is no need to attch a specific
+        importance to the text.
+        <p>Made with <b>natural</b> ingredients</p>
+        <p>Made with <strong>natural</strong> ingredients</p>
+    </article>
+    <style>
+        .name {
+            color: red
+        }
+    </style>
+    <article class="">
+        <h1>bdi: bidirectional isolate</h1>
+        <h4>browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text</h4>
+        <h1>World wrestling championships</h1>
+
+        <ul>
+            <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+            <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+            <li><span class="name">تیز سمی</span>: 3rd place</li>
+            <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+            <li><span class="name" dir="auto">تیز سمی</span>: 5th place</li>
+        </ul>
     </article>
     <style>
 
+    </style>
+    <article class=""">
+        <h1>" bdo HTML Bidirectional Text Override element</h1>
+        <h4>overrides the current directionality of text, so that the text within is rendered in a different direction
+        </h4>
+        <h1>Famous seaside songs</h1>
+        <p>The English song "Oh I do like to be beside the seaside"</p>
+        <p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+        <p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+        <p dir="rtl">This is how is is?</p>
+    </article>
+    <style>
+    </style>
+    <article class="">
+        <h1>br : line break</h1>
+        <h4>Useful for a letter or a poem where line breaks are important</h4>
+        <p> When they had sworn to this advised doom,<br />
+            They did conclude to bear dead Lucrece thence;<br />
+            To show her bleeding body thorough Rome,<br />
+            And so to publish Tarquin’s foul offence:<br />
+            Which being done with speedy diligence,<br />
+            The Romans plausibly did give consent<br />
+            To Tarquin’s everlasting banishment.<br />
+        </p>
+    </article>
+    <style>
+        .testButtons #one {
+            border: none;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .testButtons #two {
+            border: none;
+            background-color: rgb(0, 174, 255);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+    <article class="testButtons">
+        <h1>button</h1>
+        <h4>Clickable button</h4>
+        <button id="one">Styled</button>
+        <button id="two">Styled</button>
+        <button autofocus>Focus here</button>
+        <button disabled>Disabled</button>
+        <form action="a.html"><button formaction="Inline.html">reload</button></form>
+        <form action="Inline.html"><input type="file">Select files<button formenctype="multipart/form-data">Submit
+                files</button></form>
+        <form><button formtarget="_blank">Blank</button></form>
+        <form><button formtarget="_self">Self</button></form>
+        <form><button formtarget="_parent">parent</button></form>
+        <form><button formtarget="_top">top</button></form>
+        <form action="Inline.html">
+            <input name="name" type="text">
+            <input name="range" type="range">
+            <input type="search">
+            <button type="reset">RESET</button>
+            <button type="submit">SUBMIT</button>
+            <button>default button</button>
+            <button value="value of button submitted with form">Value of button to submit</button>
+        </form>
+    </article>
+    <hr />
+
+    <style>
+    </style>
+    <article class="canvaspg">
+        <h1>canvas</h1>
+        <h4>create graphical content using canvas JavaScript APIs</h4>
+        <canvas id="rect" width="300" height="200">
+            Your browser doesn’t support drawing a canvas!! Use a different browser.
+        </canvas>
+    </article>
+    <script>
+        const rectElCtx = document.getElementById('rect').getContext('2d')
+        rectElCtx.fillStyle = 'green'
+        rectElCtx.fillRect(10, 10, 200, 150)
+    </script>
+    <style>
+    </style>
+    <article class="">
+        <h1>cite</h1>
+        <h4>Quoting certain content from a source like: book, legal case paper, lyrics, statement, etc..</h4>
+        <blockquote>
+            <p>There will be a total ban of coming out of your homes</p>
+            <footer>stated in <cite><a
+                        href="https://www.nytimes.com/2020/03/24/world/asia/india-coronavirus-lockdown.html">NYTimes.com</a></cite>
+                by
+                Prime Minister Sri. Narendra Modi</footer>
+        </blockquote>
+    </article>
+    <style>
+    </style>
+    <article class="">
+        <h1>code</h1>
+        <h4>Representation of a code block</h4>
+        <p>The <code>getContext()</code> API is used to create a context for a Canvas element</p>
+    </article>
+    <hr />
+
+
+    <article>
+        <h1>data</h1>
+        <h4>element with additional item information. if its related to time or date, use time elemnet instead</h4>
+        <ul>
+            <li><data value="F8W947zz"><a
+                        href="https://www.amazon.com.au/dp/B07XYZVHNB/ref=Oct_DLandingS_rdp_9a6ca640">Belkin tempered
+                        glass</a></data></li>
+            <li><data value="065CS25122"><a
+                        href="https://www.amazon.com.au/Spigen-065CS25122-Liquid-Crystal-Designed">iPhone
+                        case</a></data></li>
+            <li><data value="B06XW64HSD"><a href="https://www.amazon.com.au/Jabra-Mono-Bluetooth-Headset-Talk">Jabra
+                        Mono bluetooth headset</a></data></li>
+            <li><data value="B00X5RV14Y"><a
+                        href="https://www.amazon.com.au/Anker-20000Mah-Portable-Charger-Powercore">Portable charger
+                        core</a></data></li>
+        </ul>
+    </article>
+    <hr />
+    <style>
+    </style>
+    <article class="">
+        <h1>datalist</h1>
+        <h4>Creates a list of options for other elements to choose from</h4>
+        Menu for tonight: <input list="menuOptions">
+        <datalist id="menuOptions">
+            <option value="Chicken Kabab">
+            <option value="Mutton Kheema"></option>
+            <option value="Chicken 65"></option>
+        </datalist>
+    </article>
+    <hr />
+    <style>
+        del {
+            color: red;
+            background-color: honeydew;
+        }
+
+        ins {
+            color: rgb(47, 255, 109);
+            background-color: honeydew;
+        }
+    </style>
+    <article class="">
+        <h1>del, ins</h1>
+        <h4>elements to represent tracking changes: deletion, insertion</h4>
+        <p>The meeting <del>ended</del><ins>concluded</ins> with all prties agreeing to <del>pass</del><ins>push</ins>an
+            unanimous decision.</p>
+    </article>
+    <hr />
+    <style>
+        dfn {
+            text-decoration: underline;
+            font-size: 20px;
+            color: lightcoral;
+        }
+    </style>
+    <article class="">
+        <h1>dfn</h1>
+        <h4>Definition Element. the sourrounding element like dt/dd , p , section is supposed to be the explanation</h4>
+        <p>The term <dfn>aggregation</dfn> means the formation of a number of things into a cluster.</p>
+    </article>
+    <hr />
+    <style>
+        em {
+            font-weight: bold;
+            background-color: lightseagreen;
+        }
+    </style>
+    <article class="">
+        <h1>em</h1>
+        <h4>emphasis: use this when you need to stress something in the senetence</h4>
+        <p>The three culprits were <em>executed</em> in broad <em>daylight</em></p>
+    </article>
+    <hr />
+    <style>
+    </style>
+    <article class="">
+        <h1>embed</h1>
+        <h4>Embedding a video is possible with this tag. Give it suitable width, height and src</h4>
+        <embed width="500" height="500" src="https://embed.ted.com/talks/karin_oberg_the_galactic_recipe_for_a_living_planet">
+    </article>
+    <hr />
+    <style>
     </style>
     <article class="">
         <h1></h1>
         <h4></h4>
     </article>
+    <hr />
     <style>
-
     </style>
     <article class="">
         <h1></h1>
         <h4></h4>
     </article>
+    <hr />
     <style>
-
     </style>
     <article class="">
         <h1></h1>
         <h4></h4>
     </article>
-
+    <hr />
 
 
 
