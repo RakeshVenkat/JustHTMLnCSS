@@ -7,35 +7,70 @@
             font-weight: 800;
             margin: 0.5em 0;
         }
-    
+
         h4 {
             color: rgb(255, 0, 98);
             font-size: medium;
             font-weight: 800;
             margin: 0.5em 0;
         }
-    
+
         a {
             text-decoration: none;
             color: unset;
         }
     </style>
-        <h1>Playground of inline elements with examples - Page 2</h1>
+    <h1>Playground of inline elements with examples - Page 2</h1>
     <hr />
 
     <style>
-        .checkform button {background-color: gray; border: none; padding: 10px;}
-        .checkform input:enabled { border-color: green;}
-        .checkform input:disabled { border-color: red;}
-        .checkform input:read-only { border-radius: 5px;}
-        .checkform input:placeholder-shown { box-shadow: 2px 10px 10px 10px gray;}
-        .checkform input:default { padding: 10px; border: 3px hashed hotpink;}
-        .checkform input:checked { padding: 10px; border: 3px hashed hotpink;}
-        .checkform input:required { background-color: red;}
-        .checkform input:optional {background-color: lawngreen;}
-        .checkform :blank { color: lightcoral; }
-        .checkform ::placeholder {  color: blue; }
+        .checkform button {
+            background-color: gray;
+            border: none;
+            padding: 10px;
+        }
 
+        .checkform input:enabled {
+            border-color: green;
+        }
+
+        .checkform input:disabled {
+            border-color: red;
+        }
+
+        .checkform input:read-only {
+            border-radius: 5px;
+        }
+
+        .checkform input:placeholder-shown {
+            box-shadow: 2px 10px 10px 10px gray;
+        }
+
+        .checkform input:default {
+            padding: 10px;
+            border: 3px hashed hotpink;
+        }
+
+        .checkform input:checked {
+            padding: 10px;
+            border: 3px hashed hotpink;
+        }
+
+        .checkform input:required {
+            background-color: red;
+        }
+
+        .checkform input:optional {
+            background-color: lawngreen;
+        }
+
+        .checkform :blank {
+            color: lightcoral;
+        }
+
+        .checkform ::placeholder {
+            color: blue;
+        }
     </style>
     <article class="testInput">
         <h1>input</h1>
@@ -76,59 +111,169 @@
 
         Disabled: <input type="url" disabled>
 
-        <br/>
-        Use the <code>form</code> attribute on any button or input to associate it to a form available elsewehre in the document. (not necessarily nesting the elements)
+        <br />
+        Use the <code>form</code> attribute on any button or input to associate it to a form available elsewehre in the
+        document. (not necessarily nesting the elements)
         <input form="formPlacedElseWhere" type="text" name="name1" placeholder="type here to activate form submission">
         <button form="formPlacedElseWhere" type="submit">Submit the form</button>
         <form id="formPlacedElseWhere"></form>
 
-        <br/>formaction: image or submit
+        <br />formaction: image or submit
         <form><input type="submit" formaction="#"><input type="image" src="images/airtel.png" formaction="#"></form>
 
-        <br/>formnovalidate
-        <form><input type="password" required><button type="submit" formnovalidate>This form will not validate</button></form>
-<br/>
-<code>pattern</code>:  is of type text, tel, email, url, password,  or search
+        <br />formnovalidate
+        <form><input type="password" required><button type="submit" formnovalidate>This form will not validate</button>
+        </form>
+        <br />
+        <code>pattern</code>: is of type text, tel, email, url, password, or search
         <form class="checkform">
-            3letterCountrycode:<input type="text" name="text" pattern="[A-za-z]{3}" title="Enter a 3 letter country code"><br/>
-            5DigitNumber:<input type="text" name="number" pattern="[0-9]{2,5}" title="Match 2 digit upto 5 didgit number"><br/>
-            <input type="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+            3letterCountrycode:<input type="text" name="text" pattern="[A-za-z]{3}"
+                title="Enter a 3 letter country code"><br />
+            5DigitNumber:<input type="text" name="number" pattern="[0-9]{2,5}"
+                title="Match 2 digit upto 5 didgit number"><br />
+            <input type="email"
+                pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
             <input type="text" disabled>
             <input type="number" readonly value="999">
             <input type="text" placeholder="Enter a valid text here">
             <button type="submit">Test</button>
-            NOK: <input type="radio" name="radio" checked> <input type="radio" name="radio" > <input type="radio" name="radio" checked> 
-            NOK: <input type="checkbox" name="checkbox" checked> <input type="checkbox" name="checkbox" > <input type="checkbox" name="checkbox" > 
+            NOK: <input type="radio" name="radio" checked> <input type="radio" name="radio"> <input type="radio"
+                name="radio" checked>
+            NOK: <input type="checkbox" name="checkbox" checked> <input type="checkbox" name="checkbox"> <input
+                type="checkbox" name="checkbox">
             <input type="text" required>
         </form>
-    
+    </article>
+
+    <style>
+        .ins ins {
+            background-color: rgb(110, 190, 110);
+        }
+    </style>
+    <article class="ins">
+        <h1>Insert</h1>
+        <h4>Use ins with cite and datetime attribute</h4>
+        <ins cite="SupermanMovie" datetime="2010-01-01">With great power comes great responsibility</ins>
+    </article>
+
+    <style>
+        .kbd kbd {
+            background-color: gray;
+            border-radius: 3px;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+    <article class="kbd">
+        <h1>kbd : HTML Keyboard input element</h1>
+        <h4>represent keyboard input elements. Ex: Alt, Cntrl, Fn(n),tab, space, etc..</h4>
+        <p>Click <kbd>Cntrl</kbd> + <kbd>C</kbd> to copy text</p>
+    </article>
+
+    <style>
+        .label label {
+            color: magenta;
+        }
+    </style>
+    <article class="label">
+        <h1>label</h1>
+        <h4>Create controlled input element using label (using for-id attribuitesor nesting)</h4>
+        <label>
+            Click here to enter your username:
+            <input type="text">
+        </label>
+        <br />
+        <input id="passwordField" type="password">
+        <label for="passwordField">Enter your password</label>
+        <br /> Using the <code>for</code> attribute with same id only matches the 1st id element in the document
+        <label for="gender">Select your gender:</label><input id="gender" type="radio">Male<input id="gender"
+            type="radio">Female
+        <form id="myForm"><input type="search"></form>
+        <label form="myForm">Search here</label>
+        <pre>
+            Donts:
+            1. Donot place interactive elements like anchors, buttons inside label. 
+            2. Donot place heading elements inside label as headings are used for navigation. This affects assistive technology!!
+        </pre>
+    </article>
+
+    <style>
+        .map img {
+            display: block;
+            margin: 0 auto;
+            width: 260px;
+            height: 232px;
+        }
+    </style>
+    <article class="map">
+        <h1>map</h1>
+        <h4>Create a clickable area using the image map. Used with <code>area</code> tag</h4>
+        <map name="triangle">
+            <area shape="poly" coords="130,147,200,107,254,219,130,228"
+                href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" alt="HTML" />
+            <area shape="poly" coords="130,147,130,228,6,219,59,107" href="https://developer.mozilla.org/docs/Web/CSS"
+                target="_blank" alt="CSS" />
+            <area shape="poly" coords="130,147,200,107,130,4,59,107"
+                href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" alt="JavaScript" />
+        </map>
+        <img usemap="triangle" src="images/http.png" alt="a triangle" />
+        <map name="primary">
+            <area shape="circle" coords="75,75,75" href="left.html">
+            <area shape="circle" coords="275,75,75" href="right.html">
+        </map>
+        <img usemap="#primary" src="https://placehold.it/350x150" alt="350 x 150 pic">
+    </article>
+
+    <style>.mark mark{background-color: yellow;}</style>
+    <article class="mark">
+        <h1>mark</h1>
+        <h4>marked to highlight a content. of special importamnce tpo user. example a search string</h4>
+        <p>Search results for "salamander":</p>
+        <hr>
+        <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+        <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
     </article>
 
     <style></style>
-    <article class="">
-        <h1></h1>
-        <h4></h4>
-    </article>
+    <article class="meter">
+        <h1>meter</h1>
+        <h4>represent a range with a known set of limits</h4>
+        <meter id="speedometer0" min=0 max=150 optimum=50 low=30 high=120 value=100>Speed0</meter>
+        <meter id="speedometer1" max=150 low=30 high=100 value=120>Speed1</meter>
+        <meter id="speedometer2" max=150 optimum=50 low=30 high=120 value=20>Speed2</meter>
+        <p>He got a <meter low=69 high=80 max=100 value=84>B</meter> on the exam.</p>
+        <p> <meter low=60 high=80 max=100 value=54>B</meter></p>
+        NOK: Something to do with the low value for getting the RED color!!
+    </article>    
+
+    <style></style>
+    <article class="noscript">
+        <h1>noscript</h1>
+        <h4>The script to execute or the contnet to show when script is disabled on the browser</h4>
+        <noscript><a href="http://xyz.com">Click here when script is disabled!!</a></noscript>
+        Disable the JavaScript in the browser  settings inorder to see the result!!
+    </article>    
+    
     <style></style>
     <article class="">
         <h1></h1>
         <h4></h4>
-    </article>
+    </article>    
     <style></style>
     <article class="">
         <h1></h1>
         <h4></h4>
-    </article>
+    </article>    
     <style></style>
     <article class="">
         <h1></h1>
         <h4></h4>
-    </article>
+    </article>    
     <style></style>
     <article class="">
         <h1></h1>
         <h4></h4>
-    </article>
+    </article>    
     <style></style>
     <article class="">
         <h1></h1>
