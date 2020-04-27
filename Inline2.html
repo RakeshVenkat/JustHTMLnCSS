@@ -24,16 +24,18 @@
     <hr />
 
     <style>
-        .checkform :enabled{ border-color: green;}
-        .checkform :disabled { border-color: red;}
-        .checkform :read-only { border-radius: 5px;}
-        .checkform :placeholder-shown { box-shadow: 2px 10px 10px 10px gray;}
-        .checkform :default { padding: 10px; border: 3px hashed hotpink;}
-        .checkform :checked { padding: 10px; border: 3px hashed hotpink;}
-        .checkform :required { background-color: red;}
-        .checkform :optional {background-color: lawngreen;}
+        .checkform button {background-color: gray; border: none; padding: 10px;}
+        .checkform input:enabled { border-color: green;}
+        .checkform input:disabled { border-color: red;}
+        .checkform input:read-only { border-radius: 5px;}
+        .checkform input:placeholder-shown { box-shadow: 2px 10px 10px 10px gray;}
+        .checkform input:default { padding: 10px; border: 3px hashed hotpink;}
+        .checkform input:checked { padding: 10px; border: 3px hashed hotpink;}
+        .checkform input:required { background-color: red;}
+        .checkform input:optional {background-color: lawngreen;}
         .checkform :blank { color: lightcoral; }
         .checkform ::placeholder {  color: blue; }
+
     </style>
     <article class="testInput">
         <h1>input</h1>

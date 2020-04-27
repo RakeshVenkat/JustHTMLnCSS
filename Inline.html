@@ -42,7 +42,7 @@
         <h1>Inline vs Block</h1>
         <h4>Block element breaks the area, while inline doesn't.
             Inline uses an <b>Inline box</b>, while
-            Block uses an <b>Block box</b>. These can be intercahnged thou'
+            Block uses an <b>Block box</b>. These can be intercahnged thou' using display css prop.
         </h4>
     
         <div><span>Hand</span> <span>Therapy</span> <span>Balls</span></div>
@@ -109,7 +109,7 @@
     
         if href is empty, it takes you to same page
         <li><a href="">Click to go to same page!!</a></li>
-        Download !! Not working.
+        Download attribute !! Not working.
         <li><a href="" download="images/airtel.png">Airtel logo</a></li>
         Using a '/' in the begining of the path in href makes the path as filesystemroot/path
         Without a leading '/' the path uses the application root where the current file is loacated and concatenates the
@@ -227,7 +227,7 @@
                 href="media/file_example_MP3_700KB.mp3">link to the audio</a> instead.</p></audio>
         Play MP3 here: <audio controls src="media/file_example_MP3_700KB.mp3" currentTime='3600'>Your browser doent
             support playing
-            audio files</audio>
+            audio files</audio><br/>
         Play MP3 here: <audio controls>
             <source src="media/file_example_MP3_700KB.mp3" type="audio/mp3">
             <source src="media/file_example_OOG_1MG.ogg" type="audio/ogg">
@@ -348,8 +348,9 @@
         rectElCtx.fillRect(10, 10, 200, 150)
     </script>
     <style>
+        .cite cite{background-color: coral}
     </style>
-    <article class="">
+    <article class="cite">
         <h1>cite</h1>
         <h4>Quoting certain content from a source like: book, legal case paper, lyrics, statement, etc..</h4>
         <blockquote>
@@ -361,8 +362,9 @@
         </blockquote>
     </article>
     <style>
+        .code code {background-color: coral}
     </style>
-    <article class="">
+    <article class="code">
         <h1>code</h1>
         <h4>Representation of a code block</h4>
         <p>The <code>getContext()</code> API is used to create a context for a Canvas element</p>
@@ -392,7 +394,7 @@
     </style>
     <article class="">
         <h1>datalist</h1>
-        <h4>Creates a list of options for other elements to choose from</h4>
+        <h4>Creates a list of options for other elements to choose from using list attribute containing the id of the datalist as reference</h4>
         Menu for tonight: <input list="menuOptions">
         <datalist id="menuOptions">
             <option value="Chicken Kabab">
@@ -498,7 +500,7 @@
         Remote Address: 151.101.82.109:443
         Referrer Policy: no-referrer-when-downgrade
         </pre>
-        <br /><a href="https://www.w3schools.com/tags/att_iframe_sandbox.asp">W3Schools snadbox</a>
+        <br /><a href="https://www.w3schools.com/tags/att_iframe_sandbox.asp">W3Schools sandbox</a>
         Empty iframe box: <iframe src="about:blank"></iframe>
         <br />The <em>title</em> attribute needs to <strong>describe</strong> what the iFrame is doing. This is needed
         by screen readers!!
