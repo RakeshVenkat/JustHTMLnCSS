@@ -46,3 +46,38 @@ Examples of inline elements for letters starting i added
 `
 Split the file into two as loading in one file was getting cumbersome !!
 
+# Day4:
+Examples of inline elements added. 
+`
+<kbd>
+<label>
+<map>
+<mark>
+<meter>
+<noscript>
+<object>
+<output>
+<picture>
+<progress>
+<q>
+<ruby>
+<s>
+<samp>
+<script>
+<select>
+<slot>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<svg>
+<template>
+<textarea>
+<time>
+<u>
+<tt>
+<var>
+<video>
+<wbr>
+`
