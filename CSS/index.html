@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Getting started with CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #testCSS {
+            color: red;
+        }
+
+        #testexternalinternal {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>I am a level one heading</h1>
+
+    <p class="special">This is a paragraph of text. In the text is a <span class="special">span element</span>
+        and also a <a href="http://example.com" target="_blank">link</a>.</p>
+
+    <p>This is the second paragraph. It contains an <em>emphasized</em> element.</p>
+
+    <div class="special">random text here</div>
+
+    <ul>
+        <!-- In this case since style tag was defined after loading external, internal wins-->
+        <li id="testexternalinternal">Item one</li>
+        <li class="special">Item two</li>
+        <!--Inline style wins b/w external, internal, inline-->
+        <li id="testCSS" style="color:blue">Item <span>hello<em>three</em></span> Hello <em>four</em></li>
+    </ul>
+    <h2>navigation rules</h2>
+    <div class="box">
+        <p>Something</p>
+        <p>is</p> <span>here</span>
+    </div>
+
+    <p>one</p>
+    <p>two</p>
+    <p>three</p>
+
+
+    <p class="specific">four</p>
+    <p class="specific">five</p>
+    <p class="specific">six</p>
+
+    <h3 class="intro">introduction</h3>
+
+    <div class="outer">
+        <div class="inner">
+            This is inside a box
+        </div>
+    </div>
+
+    <div class="rotate"></div>
+
+    <div class="shorthand">hello there..............</div>
+</body>
+
+</html>

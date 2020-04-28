@@ -1,0 +1,115 @@
+@import 'media.css';
+
+/* ELEMENT SELECTOR */
+
+h1 {
+    color: red;
+}
+
+p, li {
+    color: green;
+}
+
+ul {
+    list-style-type: armenian;
+}
+
+/* CLASS SELECTOR */
+
+li.special, p.special {
+    color: orange;
+    font-size: 1.1em;
+}
+
+/* DESCENDENT COMBINATOR */
+
+li em {
+    color: purple;
+}
+
+/* ADJACENT COMBINATOR */
+
+h1 + p {
+    color: gray; /* Class selector over rode the element selector*/
+    font-size: 2em;
+    border: 2px solid gray;
+}
+
+/* STATE BASED SELECTORS */
+a:link {
+    color: violet;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+/* COMBINING COMBINATORS and SELECTORS*/
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+
+/* TEST CASCADING RULES: External, internal, inline*/
+#testCSS {
+    color: green;
+}
+#testexternalinternal {
+    color: green;
+}
+
+.box p{
+    font-family: sans-serif;
+}
+
+.box p:first-child{
+    font-style: italic;
+}
+
+h1, h2, .intro {
+    text-transform: uppercase;
+}
+
+/* CASCADED SELECTOR WINS*/
+p{
+    border: 1px solid green;
+}
+/* THIS ONE WINS*/
+p {
+    border: 1px dashed blue;
+}
+/* CLASS SELECTOR IS SPECIFIC , hence wins*/
+.specific {
+    border: 10px solid yellow;
+}
+
+/* Functions */
+.outer {
+    border: 2px solid black;
+}
+
+.inner {
+    width: calc(90% - 40px);
+    background-color: purple;
+    color: white;
+}
+
+.rotate {
+    transform: rotate(0.3turn);
+    width: 20px;
+    background-color: turquoise;
+    padding: 25px;
+    margin: 20px;
+}
+
+/* SHORTHAND */
+.shorthand {
+    padding: 10px 15px 15px 5px;
+    background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+}
